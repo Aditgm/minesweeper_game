@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minesweeper | Classic Puzzle Game Built with React</title>
+    <meta name="description" content="Play the classic Minesweeper game online. Challenge yourself with customizable difficulty levels in this React-powered version." />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="theme-color" content="#1e1e1e" />
+    <meta property="og:title" content="Minesweeper | React Edition" />
+    <meta property="og:description" content="A modern take on the classic Minesweeper game built with React.js" />
+    <meta property="og:image" content="%PUBLIC_URL%/social-preview.png" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@yourhandle" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background: #121212;
+        color: #e0e0e0;
+        font-family: 'Roboto', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root:empty {
+        position: relative;
+        min-height: 100vh;
+      }
+      #root:empty::after {
+        content: "💣 Loading Minesweeper...";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.2rem;
+        color: #ff9800;
+        text-align: center;
